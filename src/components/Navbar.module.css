@@ -1,0 +1,34 @@
+.header {
+  background-color: black;
+  height: 80px;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+}
+
+.linkContainer {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.activeLink {
+  color: #d29332;
+  position: relative;
+}
+
+.activeLink::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: -25%;
+  background-color: #d29332;
+}
